@@ -301,8 +301,8 @@ footer p {
 @media screen and (max-width: 1350px){
 
 #straw{
-  margin-left: 310px;
-  margin-top: 550px;}
+  display: none;
+}
   .middle_img img{
 width: 70%; }
 .circle-container {
@@ -355,10 +355,63 @@ main, header,.padding{
    padding-left: 5%;
     padding-right: 5%;
 }
+.diet_content p,.diet_content h2{
+    padding-left: 5%;
+  padding-right: 5%;
+}
+.diet_content p{
+font-size: 1rem;}
 }
 @media screen and (max-width: 1200px){
+  #meal{
+    width: 100%;
+    height:100%;
+  }
 
-#straw{
-display: none;
+}
+@media screen and (max-width: 900px)
+{
+ul.topnav li a.active{
+  height: 10px;
+  width: auto;
+  font-size: 0.8rem;
+}
+ul.topnav li a{
+  height: 10px;
+  width:auto;
+    padding: 8px 6px;
+    font-size: 0.8rem;
+  }
+.middle_text h2{
+  font-size: 1.5rem;
+}
+.middle_text p{
+  font-size: 1rem;
+}
+footer{
+  height: 175px;
+}
+footer div{
+  height: 175px;
+}
+.bottom_headline, .bold_text {
+    font-size: 1.5rem;
+}
+footer p{
+  font-size: 0.9rem;
+}
+.padding{
+  margin-bottom: 0px;
+}
+.top_head {
+    font-size: 2.5rem;
+  }
+  .top_1 p{
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
+  ul.topnav li a:hover:not(.active) {
+/*  height: 13px;*/
+  width: auto;
 }
 }
