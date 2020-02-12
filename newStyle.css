@@ -60,13 +60,19 @@ ul.topnav li.left {
 
 @media screen and (max-width: 600px) {
   ul.topnav li.left, ul.topnav li {
-    float: none; }
+    float: none; 
+    margin-bottom: 10px;
+  }
     .topnav .left {
-      text-align: center;}
-    .top_text {
-      display: inline-block;
       text-align: center;
-    } 
+      padding-bottom: 20px;
+    }
+    .top_text {
+      display: unset;
+      text-align: center;}
+    .middle_img img{
+      display: none;
+    }
 }
 
 .topnav .left {
@@ -92,11 +98,24 @@ ul.topnav li.left {
   font-family: 'Roboto', sans-serif;
   font-weight: 300; }
 
-.top_text .top_2 {
+.top_2 {
   display: flex;
   justify-content: flex-end;
   width: 100%;
-  padding-left: 30px; }
+  padding-left: 30px;}
+
+@media screen and (max-width: 600px){
+/*  .top_text.top_2{
+    display: flex;
+    justify-content: center;
+    width: auto;
+    }*/
+.top_2 {
+width:85%;
+
+    } 
+}
+
 
 .top_text .top_2 img {
   width: 100%; }
@@ -446,9 +465,52 @@ ul.topnav li a{
 .middle_text p{
   font-size: 1rem;
 }*/
-.circle-container{
-  display: none;
+/*.circle-container {
+  position: absolute;
+  height: unset;
+  border-radius: unset;
+  padding: 0;
+  list-style:
+  border:all none;
+  margin-top: 0px;
+  margin-left: 0px; }
+
+.circle-container > * {
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin: -1.5em;
+  width: 2.5em;
+  height: 2.5em;
+}*/
+  /*.circle-container li img {display: inline-block;}*/
+.circle-container > *:nth-of-type(1) {
+      transform: none; }
+    .circle-container > *:nth-of-type(2) {
+      transform: none; }
+    .circle-container > *:nth-of-type(3) {
+      transform: none;
+    }
+    .circle-container > *:nth-of-type(4) {
+      transform: none; }
+    .circle-container > *:nth-of-type(5) {
+      transform: unset; 
+    }
+    .circle-container{
+      border:none;
+    }
+  .circle-container img {
+    display: block;
+    max-width: 100%;
 }
+.circle-container li{
+  margin-bottom: 40px;
+  margin-right: 50px; 
+}
+
+
+.middle_img img{display: none;}
 footer{
   height: 175px;
   margin-top: 30px;
@@ -500,11 +562,14 @@ header {
   background-size: 10%;
   background-position: 0px 0px, 400px 50px, 1250px 600px, 1300px 150px, 712px 1078px;  }
 }
-@media screen and (max-width: 600px){
-  .top_2 
-  {
+/*@media screen and (max-width: 600px){
+  .top_text.top_2{
     display: flex;
     justify-content: center;
     width: auto;
     }
+        .top_text.top_2 img{
+width:50px;
+    } 
 }
+*/
