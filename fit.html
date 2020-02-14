@@ -47,7 +47,7 @@
                 </div>
                 
                 <ul class='circle-container'>
-                    <li class="grey_circle"><img class="icon_background" src="images/bell.png"></li>
+                    <li class="grey_circle" ><img class="icon_background" src="images/bell.png" onclick="document.getElementById('change_diet_text').style.display='none'"> </li>
                     <li class="grey_circle"><img class="icon_background" src="images/days.png"></li>
                     <li class="active_circle grey_circle">
                         <img  class="icon_background active_green" src="images/growth.png">
@@ -57,7 +57,9 @@
                 </ul>
             </div>  
             <div class="column_2">
-                <div class="middle_text">
+                <div class="middle_text" id="change_diet_text">
+                <!-- <button onclick="document.getElementById('change_diet_text').style.display='none'">training </button> -->
+
                     <h2>Best calorie <span class="green">counter app!</span></h2>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
                 </div>
